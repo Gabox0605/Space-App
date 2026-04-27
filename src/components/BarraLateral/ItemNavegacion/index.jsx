@@ -7,8 +7,12 @@ const ItemListaEstilizado= styled.li`
     display:flex;
     align-items:center;
     gap: 16px;
-    color: ${props => props.$activo ? "#7b78e5" : "#d9d9d9"};
     font-family: ${props => props.$activo ? "GandhiSansBold" : "GandhiSansRegular"};
+
+    a {
+        color: ${props => props.$activo ? "#7b78e5" : "#d9d9d9"};
+        text-decoration: none; /* Para quitar el subrayado por defecto de los enlaces */
+    }
 
 `
 

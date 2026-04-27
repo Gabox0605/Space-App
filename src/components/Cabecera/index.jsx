@@ -2,10 +2,11 @@ import styled from "styled-components";
 import CampoTexto from "../CampoTexto";
 
 const HeaderEstilizado = styled.header`
-    padding: 60px 0;
+    padding: 60px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 
     > img {
         width: 150px;
