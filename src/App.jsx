@@ -4,6 +4,9 @@ import Cabecera from "./components/Cabecera";
 import BarraLateral from "./components/BarraLateral";
 import Banner from "./components/Banner";
 import Galeria from "./components/Galeria";
+import fotos from "./fotos.json";
+import { useState } from "react";
+import ModalZoom from "./components/ModalZoom";
 
 const FondoGradiente = styled.div`
   background: linear-gradient(175deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
@@ -25,14 +28,16 @@ const MainContainer = styled.main`
   box-sizing: border-box;
 `;
 
-const ContenidoGaleira = styled.section`
-display: flex;
-flex-direction: column;
-flex-grow: 1;
-`
+const ContenidoGaleria = styled.section`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 24px;
+`;
 
 
-function App() {
+const App = () => {
+  const [fotosDeGaleria, setFotosDeGaleria] = useState(fotos);
   return (
     <>
       <FondoGradiente>
@@ -42,14 +47,14 @@ function App() {
           <Cabecera />
           <MainContainer>
             <BarraLateral />
-            <ContenidoGaleira>
+            <ContenidoGaleria>
               <Banner/>
-              <Galeria/>
-            </ContenidoGaleira>
+              <Galeria fotos={fotosDeGaleria} />
+            </ContenidoGaleria>
           </MainContainer>
           
         </AppContainer>
-        
+        <ModalZoom/>
       </FondoGradiente>
     </>
   )
