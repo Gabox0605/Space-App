@@ -6,6 +6,7 @@ import Imagen from "./Imagen";
 
 const GaleriaContainer = styled.div`
     display: flex;
+    gap: 24px;
 `;
 
 const SeccionFluida = styled.section`
@@ -18,28 +19,28 @@ const ImagenesContainer = styled.section`
     flex-wrap: wrap;
     gap: 24px;
 `
-const Galeria = ({ fotos= [] })=>{
-    return(
+const Galeria = ({ fotos = [], alSeleccionarFoto, alAlterarFavorito }) => {
+    return (
         <>
-        <Tag />
-        <GaleriaContainer>
-            <SeccionFluida>
-               <Titulo>Navege Por La Galeria</Titulo> 
-               <ImagenesContainer>
-                    {fotos.map(foto => (
-                        <Imagen
-                            key={foto.id}
-                            foto={foto}
-                        />
-                    ))}
-               </ImagenesContainer>
-            </SeccionFluida>
-            <Populares>
-                <Titulo>Populares</Titulo>
-            </Populares>
-        </GaleriaContainer>
-        
-        
+            <Tag />
+            <GaleriaContainer>
+                <SeccionFluida>
+                    <Titulo>Navege Por La Galeria</Titulo>
+                    <ImagenesContainer>
+                        {fotos.map(foto => (
+                            <Imagen
+                                alterarFavorito={alAlterarFavorito}
+                                alSolicitarZoom={alSeleccionarFoto}
+                                key={foto.id}
+                                foto={foto}
+                            />
+                        ))}
+                    </ImagenesContainer>
+                </SeccionFluida>
+                <Populares fotos={fotos} />
+            </GaleriaContainer>
+
+
         </>
     )
 }

@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import Galeria from "./components/Galeria";
 import fotos from "./fotos.json";
 import { useState } from "react";
+import Footer from "./components/Footer";
 import ModalZoom from "./components/ModalZoom";
 
 const FondoGradiente = styled.div`
@@ -35,26 +36,34 @@ const ContenidoGaleria = styled.section`
   gap: 24px;
 `;
 
-
 const App = () => {
-  const [fotosDeGaleria, setFotosDeGaleria] = useState(fotos);
+  const [fotosDeGaleria] = useState(fotos);
+  const [fotoSeleccionada, setFotoSeleccionada] = useState(null);
+
+  const alAlterarFavorito = (foto) => {
+    console.log(foto);
+  }
+  const seleccionarFoto = (foto) => setFotoSeleccionada(foto);
+  const cerrarModal = () => setFotoSeleccionada(null);
+
   return (
     <>
       <FondoGradiente>
         <GlobalStyle />
-        
+
         <AppContainer>
           <Cabecera />
           <MainContainer>
             <BarraLateral />
             <ContenidoGaleria>
-              <Banner/>
-              <Galeria fotos={fotosDeGaleria} />
+              <Banner />
+              <Galeria alSeleccionarFoto={seleccionarFoto} fotos={fotosDeGaleria} alAlterarFavorito={alAlterarFavorito} />
             </ContenidoGaleria>
           </MainContainer>
-          
+
+          <Footer />
         </AppContainer>
-        <ModalZoom/>
+        <ModalZoom foto={fotoSeleccionada} onCerrar={cerrarModal} alAlterarFavorito={alAlterarFavorito} />
       </FondoGradiente>
     </>
   )
