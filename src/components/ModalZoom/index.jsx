@@ -31,7 +31,16 @@ const DialogEstilizado = styled.dialog`
             position: static;
         }
     }
+
+    @media (max-width: 740px) {
+        align-items: flex-start;
+        padding: 12px;
+        width: 100%;
+        max-width: 100%;
+    }
 `
+// ModalZoom muestra una foto en grande cuando el usuario hace clic en expandir.
+// foto es la imagen seleccionada, onCerrar cierra el modal y alAlterarFavorito altera el estado de favorito.
 const ModalZoom = ({ foto, onCerrar, alAlterarFavorito }) => {
     return (
         <>

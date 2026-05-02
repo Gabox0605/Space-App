@@ -1,16 +1,42 @@
-# React + Vite
+# Space App 🌌
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Space App es una aplicación de galería interactiva desarrollada con **React** y **Styled Components**, diseñada para explorar las maravillas del universo. La aplicación ofrece una experiencia fluida y visualmente atractiva, adaptada tanto para computadoras de escritorio como para dispositivos móviles y tablets.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Galería Dinámica:** Visualización de imágenes espaciales con títulos y fuentes.
+- **Buscador Inteligente:** Filtrado en tiempo real mediante una barra de búsqueda que normaliza caracteres (ignora tildes y mayúsculas).
+- **Filtros por Etiquetas (Tags):** Categorización rápida por Estrellas, Galaxias, Lunas y Nebulosas.
+- **Favoritos:** Funcionalidad para marcar tus imágenes preferidas.
+- **Modal de Zoom:** Visualización detallada con descripciones extendidas para cada fotografía.
+- **Diseño Responsivo:** 
+  - **Desktop/Tablet:** Mantiene una estructura lateral organizada con escalado de componentes.
+  - **Móvil:** Transición automática a un diseño de columna única para optimizar la navegación táctil.
 
-## React Compiler
+## 🛠️ Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React:** Biblioteca principal para la construcción de la interfaz.
+- **Styled Components:** Gestión de estilos mediante CSS-in-JS y Media Queries avanzadas.
+- **Vite:** Entorno de desarrollo rápido y moderno.
+- **JSON:** Almacenamiento local de datos para la galería y populares.
 
-## Expanding the ESLint configuration
+## 📦 Instalación y Uso
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clona el repositorio:
+   ```bash
+   git clone <url-del-repositorio>
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+3. Inicia el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Estructura del Proyecto
+
+- `src/components/`: Componentes modulares (Cabecera, Banner, Galería, etc.).
+- `src/App.jsx`: Componente principal que gestiona el estado global de la aplicación.
+- `src/fotos.json`: Fuente de datos para la galería principal.

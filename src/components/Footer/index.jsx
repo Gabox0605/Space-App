@@ -63,6 +63,8 @@ const redesSociales = [
     },
 ];
 
+// Footer renderiza la sección inferior con enlaces a redes sociales.
+// redesSociales es un arreglo de datos que se mapea para crear enlaces e íconos.
 const Footer = () => {
     return (
         <FooterEstilizado>

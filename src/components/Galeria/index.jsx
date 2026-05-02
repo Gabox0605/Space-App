@@ -7,6 +7,10 @@ import Imagen from "./Imagen";
 const GaleriaContainer = styled.div`
     display: flex;
     gap: 24px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 const SeccionFluida = styled.section`
@@ -19,23 +23,29 @@ const ImagenesContainer = styled.section`
     flex-wrap: wrap;
     gap: 24px;
 `
-const Galeria = ({ fotos = [], alSeleccionarFoto, alAlterarFavorito }) => {
+// Galeria es el componente que muestra la lista principal de imágenes.
+// Recibe fotos, la función para seleccionar una foto y la función para alternar favoritos.
+const Galeria = ({ fotos = [], alSeleccionarFoto, alAlterarFavorito, tagSeleccionado, alCambiarTag }) => {
     return (
         <>
-            <Tag />
+            <Tag tagSeleccionado={tagSeleccionado} alCambiarTag={alCambiarTag} />
             <GaleriaContainer>
                 <SeccionFluida>
                     <Titulo>Navege Por La Galeria</Titulo>
-                    <ImagenesContainer>
-                        {fotos.map(foto => (
-                            <Imagen
-                                alterarFavorito={alAlterarFavorito}
-                                alSolicitarZoom={alSeleccionarFoto}
-                                key={foto.id}
-                                foto={foto}
-                            />
-                        ))}
-                    </ImagenesContainer>
+                    {fotos.length === 0 ? (
+                        <p>No se encontraron fotos para esta búsqueda.</p>
+                    ) : (
+                        <ImagenesContainer>
+                            {fotos.map(foto => (
+                                <Imagen
+                                    alterarFavorito={alAlterarFavorito}
+                                    alSolicitarZoom={alSeleccionarFoto}
+                                    key={foto.id}
+                                    foto={foto}
+                                />
+                            ))}
+                        </ImagenesContainer>
+                    )}
                 </SeccionFluida>
                 <Populares fotos={fotos} />
             </GaleriaContainer>

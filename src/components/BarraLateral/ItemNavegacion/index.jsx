@@ -17,6 +17,8 @@ const ItemListaEstilizado= styled.li`
 `
 
 
+// ItemNavegacion representa una fila del menú lateral.
+// Recibe iconos diferentes para los estados activo/inactivo y muestra el contenido hijo.
 const ItemNavegacion = ({children, iconoActivo, iconoInactivo, activo=false}) => {
     return (
         <ItemListaEstilizado $activo={activo}>

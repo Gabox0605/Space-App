@@ -4,69 +4,79 @@
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-10.png",
     "id": "1",
-    "tagId": 2
+    "tagId": 2,
+    "reseña": "La Gran Nube de Magallanes es una galaxia satélite irregular de la Vía Láctea, visible a simple vista desde el hemisferio sur. En ella se forman estrellas jóvenes y la estructura está dominada por regiones de gas y polvo. Esta reseña describe su historia astronómica y su importancia para los astrónomos del sur."
   },
   {
     "titulo": "Vía Láctea",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-2.png",
     "id": "2",
-    "tagId": 2
+    "tagId": 2,
+    "reseña": "Nuestra galaxia se extiende más de 100,000 años luz de extremo a extremo y contiene cientos de miles de millones de estrellas. La imagen resalta el disco central y los brazos espirales donde nacen nuevas estrellas, y aporta contexto sobre la ubicación de nuestro Sistema Solar dentro de la galaxia."
   },
   {
     "titulo": "Luna: cuarto menguante",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-3.png",
     "id": "3",
-    "tagId": 3
+    "tagId": 3,
+    "reseña": "En esta fase, la Luna se encuentra menguando y solo la mitad izquierda de su disco es visible desde la Tierra. Esta etapa precede a la luna nueva y es perfecta para observar los detalles de los cráteres iluminados en el terminador."
   },
   {
     "titulo": "Galaxia de Andrómeda",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-4.png",
     "id": "4",
-    "tagId": 2
+    "tagId": 2,
+    "reseña": "Andrómeda es la galaxia espiral más cercana a la Vía Láctea y se aproxima a nosotros a unos 110 kilómetros por segundo. Esta reseña explica que dentro de unos 4,000 millones de años se espera un encuentro entre ambas galaxias, creando un solo sistema estelar masivo."
   },
   {
     "titulo": "Estrella Pistola",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-5.png",
     "id": "5",
-    "tagId": 1
+    "tagId": 1,
+    "reseña": "La Estrella Pistola es una de las estrellas más brillantes del cielo y se encuentra muy cerca del centro de la Vía Láctea. Su luminosidad extrema y su temperatura alta la convierten en un objeto interesante para estudiar la evolución estelar y los vientos estelares."
   },
   {
     "titulo": "Ilustración",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-6.png",
     "id": "6",
-    "tagId": 4
+    "tagId": 4,
+    "reseña": "Esta imagen artística está inspirada en nebulosas reales, mostrando nubes de gas ionizado y polvo cósmico en colores brillantes. El texto describe cómo las nebulosas son viveros estelares y por qué estas regiones son esenciales para la formación de nuevas estrellas."
   },
   {
     "titulo": "Galaxia de Andrómeda",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-7.png",
     "id": "7",
-    "tagId": 2
+    "tagId": 2,
+    "reseña": "Otra vista de Andrómeda enfatiza sus brazos espirales y cúmulos de estrellas azules. El comentario explica la distancia aproximada de 2.5 millones de años luz y cómo los astrónomos usan esta galaxia para comparar estructuras con la Vía Láctea."
   },
   {
     "titulo": "Ilustración",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-8.png",
     "id": "8",
-    "tagId": 4
+    "tagId": 4,
+    "reseña": "Este diseño creativo mezcla colores y formas que recuerdan a una nebulosa planetaria. La reseña también menciona que estas nebulosas son las capas exteriores expulsadas por estrellas en fase de muerte."
   },
   {
     "titulo": "Cielo estrellado",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-9.png",
     "id": "9",
-    "tagId": 1
+    "tagId": 1,
+    "reseña": "Un campo estelar profundo que muestra la densidad de objetos en la Vía Láctea. En esta reseña se explica cómo las estrellas de diferentes colores indican distintos tamaños y edades."
   },
   {
     "titulo": "Ilustración",
     "fuente": "Alura Space",
     "path": "/img/galeria/foto-10.png",
     "id": "10",
-    "tagId": 1
+    "tagId": 1,
+    "reseña": "Una composición artística que mezcla nubes de gas y polvo con un cielo espacial infinito. El texto aporta una descripción amplia de los elementos visuales y su relación con fenómenos astronómicos reales."
   }
 ]

@@ -6,6 +6,12 @@ const ColumnaFotos = styled.section`
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (max-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 const Imagen = styled.img`
@@ -26,6 +32,8 @@ const Boton = styled.button`
     margin-top: 16px;
 `;
 
+// Populares muestra las imágenes destacadas de la sección lateral.
+// Usa fotosPopulares importadas desde un JSON para renderizar cada imagen.
 const Populares = () => {
     return (
         <section>

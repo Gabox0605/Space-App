@@ -9,6 +9,8 @@ const ListaEstilizada = styled.ul`
 
 
 
+// BarraLateral es el menú de navegación fijo a la izquierda.
+// Usa ItemNavegacion para cada elemento del menú con su icono activo o inactivo.
 const BarraLateral = () => {
     return (
     <aside>

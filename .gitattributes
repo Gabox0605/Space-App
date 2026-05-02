@@ -1,0 +1,11 @@
+# Establecer el comportamiento predeterminado para normalizar los finales de línea.
+* text=auto
+
+# Forzar finales de línea LF para archivos de código fuente.
+# Esto asegura consistencia entre Windows, Mac y Linux.
+*.jsx text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf

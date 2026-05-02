@@ -13,6 +13,7 @@ const FigureEstilizada = styled.figure`
     background-size: cover;
 `
 
+// Banner muestra la sección hero con la imagen de fondo y el título principal.
 const Banner = ()=>{
     return(
         <FigureEstilizada>
@@ -28,6 +29,12 @@ const TituloEstilizado = styled.h1`
     color: #FFFFFF;
     max-width: 300px;
     padding: 0 64px;
+
+    @media (max-width: 1024px) {
+        font-size: 30px;
+        line-height: 38px;
+        padding: 0 32px;
+    }
 `
 
 
