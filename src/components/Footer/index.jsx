@@ -82,7 +82,7 @@ const Footer = () => {
                     </li>
                 ))}
             </ListaRedes>
-            <p>Desarrollado por Alura Latam.</p>
+            <p>Desarrollado por Gabriel Mena Muñoz</p>
         </FooterEstilizado>
     );
 };
